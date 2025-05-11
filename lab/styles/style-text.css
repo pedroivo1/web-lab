@@ -1,0 +1,103 @@
+:root {
+  --primary-color: hsl(231, 48%, 48%);
+  --secondary-color: hsl(174, 100%, 29%);
+  --accent-color: hsl(340, 82%, 52%);
+  --main-dark-color: hsl(0, 0%, 0%);
+  --main-light-color: hsl(0, 0%, 100%);
+  --h-top-margin: 1lh;
+  --h-button-margin: 0.25lh;
+  --p-top-margin: 0.5lh;
+  --p-button-margin: 1lh;
+  --shadow: 1px 1px 4px 1px var(--main-dark-color);
+  --a-linked-color: hsl(208, 100%, 38%);
+  --a-visited-color: hsl(271, 68%, 32%);
+  --transition: all ease 200ms;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  background-color: var(--main-light-color);
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--accent-color);
+  color: var(--main-light-color);
+}
+
+h1 {
+  margin-bottom: var(--h-top-margin); /* está certo*/
+}
+
+h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-dark-color);
+  margin: var(--h-top-margin) 0 var(--h-button-margin);
+}
+
+h1 {
+  font-size: 2rem/1.2;
+}
+
+h2 {
+  font-size: 1.6rem/1.2;
+}
+
+h3 {
+  font-size: 1.3rem/1.2;
+}
+
+h4 {
+  font-size: 1rem/1.2;
+}
+
+h5 {
+  font-size: 0.83rem/1.2;
+}
+
+h6 {
+  font-size: 0.67rem/1.2;
+}
+
+p, li, pre, cite, code, span {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--main-dark-color);
+}
+
+p {
+  margin: var(--p-top-margin) 0 var(--p-button-margin);
+}
+
+a {
+  color: var(--a-linked-color);
+  text-decoration: 0.1rem underline;
+  text-underline-offset: 0.1lh;
+}
+
+a:visited {
+  color: var(--a-visited-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--main-light-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin: 0.2rem;
+  transition: var(--transition);
+  will-change: transform;
+}
+
+button:hover {
+  scale: 1.05;
+}

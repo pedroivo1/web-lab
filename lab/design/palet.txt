@@ -1,0 +1,14 @@
+https://doc.qt.io/qt-6/qtquickcontrols-material.html
+
+
+
+
+
+# ANTIGA
+# (mycolor.space)
+# Matching Palette
+# #f42559
+# #574142
+# #bfa5a6
+# #009c9c
+# #006669
