@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- CONFIGURAÇÕES -->
+    <meta charset="UTF-8" />
+    <title>pivo.dev - cartão</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="64x64" href="images/icones/p-64x64.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icones/p-16x16.png" />
+    <link rel="icon" type="image/png" sizes="24x24" href="images/icones/p-24x24.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icones/p-32x32.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="images/icones/p-128x128.png" />
+    <link rel="icon" type="image/png" sizes="256x256" href="images/icones/p-256x256.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icones/p-512x512.png" />
+
+    <!-- INFORMAÇÕES (SEO)-->
+    <meta name="author" content="Pedro Ivo A. Lima" />
+    <meta name="description" content='Meu "currículo online" — Um cartão de apresentação com HTML, CSS, JS. ☺' />
+
+    <!-- OPEN GRAPHS -->
+    <!-- GERAL -->
+    <meta property="og:site_name" content="pivo.dev" />
+    <meta property="og:url" content="https://pedroivo1.github.io/pivo.dev/" />
+    <meta property="og:title" content="pivo.dev - cartão" />
+    <meta property="og:locale" content="pt-BR" />
+    <!-- TIPO -->
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Pedro Ivo" />
+    <meta property="profile:last_name" content="Ivo Amaral Lima" />
+    <meta property="profile:username" content="pedroivo1" />
+    <meta property="profile:gender" content="male" />
+    <!-- IMAGEM 512x512px -->
+    <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-512x512.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
+    <!-- IMAGEM 256x256px -->
+    <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-256x256.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
+    <!-- IMAGEM 128x128px -->
+    <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-128x128.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="128" />
+    <meta property="og:image:height" content="128" />
+    <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
+    <!-- IMAGEM 64x64px -->
+    <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-64x64.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="64" />
+    <meta property="og:image:height" content="64" />
+    <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
+    <!-- IMAGEM 32x32px -->
+    <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-32x32.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="32" />
+    <meta property="og:image:height" content="32" />
+    <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
+    <!-- IMAGEM 16x16px -->
+    <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-16x16.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="16" />
+    <meta property="og:image:height" content="16" />
+    <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Iceland&family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/collapsible.css">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/card.js" defer></script>
+    <script src="scripts/collapsible.js" defer></script>
+  </head>
+
+  <body>
+    <article class="main-card">
+      <header>
+        <h1><a href="https://pedroivo1.github.io/pivo.dev/">pivo.dev</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#sobre" class="on">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="sobre" class="section-on" hidden>
+          <h2>Sobre Mim</h2>
+          <img src="images/eu.png" alt="Minha foto" id="my-image" />
+          <p>
+            Olá! Meu nome é Pedro Ivo e estou no 2º semestre do curso de
+            <a href="https://uvv.br/cursos/graduacao/presencial/ciencia-da-computacao/" target="_blank"
+              >ciência da computação</a
+            >
+            na
+            <a href="https://uvv.br" target="_blank">UVV</a> (Universidade Vila Velha).
+          </p>
+          <p>
+            Atualmente, estou em busca de um estágio na área de programação. Quero colocar um projeto em produção,
+            colaborar com a equipe, corrigir bugs e, acima de tudo, aprender o máximo possível com os colegas de
+            trabalho e os desafios do dia a dia.
+          </p>
+          <div class="collapsible-container">
+            <button type="button" class="collapsible-btn">
+              <h3>Foco Atual</h3>
+            </button>
+            <div class="collapsible-content" hidden>
+              <p>
+                Neste semestre, tenho dedicado bastante tempo aos estudos de matemática, pois acredito que uma base
+                sólida será fundamental para lidar com os maiores desafios como desenvolvedor. Além disso, estou me
+                aprofundando em desenvolvimento web, uma área que me atrai tanto pelas coisas incríveis que dá para
+                criar quanto pela possibilidade de colocar em prática o que aprendo por meio de projetos visuais e
+                interativos.
+              </p>
+            </div>
+          </div>
+          <div class="collapsible-container">
+            <button type="button" class="collapsible-btn">
+              <h3>Curiosidade</h3>
+            </button>
+            <div class="collapsible-content" hidden>
+              <p>
+                Sou apaixonado por esportes — pratico basquete, escalada e ando de bicicleta pela orla (não sei se conta
+                como "ciclismo"😄). Quando o assunto é assistir, topo qualquer coisa: de
+                <abbr title="Mixed Martial Arts">MMA</abbr> e sumô até vôlei e pingue-pongue.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projetos" hidden>
+          <h2>Projetos</h2>
+          <p>Esta seção está vazia mas com o esse estágio ela pode começar a ser preenchida.</p>
+          <ul>
+            <li>
+              <article class="card">
+                <header>
+                  <h3>PyGame-Shooter</h3>
+                </header>
+
+                <img src="images/conjunto-vazio.png" alt="Simbolo de conjunto vazio" />
+                <div class="content">
+                  <p>O projeto que vou fazer neste estágio pode ser o primeiro que vou colocar aqui.</p>
+                </div>
+                <footer>
+                  <ul>
+                    <li class="li-svg">
+                      <button>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                          />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="li-svg">
+                      <button>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                          />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="li-svg">
+                      <a href="https://github.com/pedroivo1/PyGame-Shooter" target="_blank" class="no-after">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </article>
+  </body>
+</html>

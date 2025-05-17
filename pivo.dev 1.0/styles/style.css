@@ -1,0 +1,203 @@
+:root {
+  --text-color-1: hsl(0, 0%, 5%);
+  --text-color-2: hsl(347, 90%, 55%);
+  --a-color-link: hsl(210, 100%, 50%);
+  --background-color: hsl(0, 0%, 90%, 0.75);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Anta", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  background: var(--background-color);
+  background-image: url("../images/mesa.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  margin: 0 0.25rem;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 0.3125rem 0.625rem;
+  color: var(--text-color-1);
+  border-radius: 0.3rem;
+}
+
+nav > ul > li > a:visited {
+  color: var(--text-color-1);
+}
+
+nav > ul > li > a:focus {
+  color: var(--text-color-1);
+}
+
+nav > ul > li > a:hover {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 100%, 0.3);
+  box-shadow: 1px 1px 3px 2px hsl(0, 0%, 15%);
+}
+
+nav > ul > li > a:active {
+  color: var(--text-color-1);
+}
+
+nav > ul > li > a.on {
+  border: 2px solid var(--text-color-2);
+}
+
+h1 {
+  font: 3rem "Iceland", sans-serif;
+}
+
+h1 > a {
+  text-decoration: none;
+}
+
+h1 > a:link {
+  color: var(--text-color-1);
+}
+
+h1 > a:visited {
+  color: var(--text-color-1);
+}
+
+h1 > a:focus {
+  color: var(--text-color-1);
+}
+
+h1 > a:hover {
+  text-decoration: none;
+}
+
+h1 > a:active {
+  color: var(--text-color-1);
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Audiowide", sans-serif;
+  color: var(--text-color-1);
+}
+
+p {
+  color: var(--text-color-1);
+  margin-bottom: 1lh;
+}
+
+li {
+  color: var(--text-color-1);
+}
+
+a {
+  transition: 200ms;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 0.125em;
+  color: var(--a-color-link);
+}
+
+a:visited {
+  color: var(--text-color-2);
+}
+
+a:focus {
+  color: var(--text-color-2);
+}
+
+a:hover {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 0.25em;
+}
+
+a:active {
+  color: var(--text-color-2);
+}
+
+a[target="_blank"]:not(".no-after")::after {
+  content: "\00a0";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-inline-start: 0.0625rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0%20-960%20960%20960' width='24px' fill='%230d0d0d'%3E%3Cpath d='M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h280v80H200v560h560v-280h80v280q0%2033-23.5%2056.5T760-120H200Zm188-212-56-56%20372-372H560v-80h280v280h-80v-144L388-332Z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+abbr {
+  transition: 200ms;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 0.125em;
+}
+
+abbr:hover {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 0.25em;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav > ul > li > a:hover {
+    text-decoration: none;
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  h1 {
+    padding-bottom: 0.5lh;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:focus {
+    color: var(--text-color-2);
+  }
+
+  nav > ul > li > a:focus {
+    color: var(--text-color-1);
+  }
+
+  abbr {
+    text-decoration: none;
+  }
+
+  abbr:hover {
+    text-decoration: none;
+  }
+}

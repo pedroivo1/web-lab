@@ -1,0 +1,36 @@
+
+body {
+  min-height: 100svh;
+}
+
+body > header {
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.4rem;
+  z-index: 10;
+}
+
+body > header > nav {
+  display: flex;
+}
+
+body > header > nav > menu {
+  display: flex;
+  align-items: center;
+}
+
+body > header > nav > menu > li {
+  margin: 0rem 0.4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  height: 1.5rem;
+}

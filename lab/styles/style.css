@@ -19,6 +19,21 @@ html {
   font-family: "Lato", sans-serif;
   background-color: var(--main-light-color);
   scroll-behavior: smooth;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+body > header {
+  background-color: hsl(0 0% 0% / 0.2);
+}
+
+body > header > nav a {
+  text-decoration: none;
+  color: var(--main-dark-color);
+}
+
+body > header > nav a:visited {
+  color: var(--main-dark-color);
 }
 
 *::selection {
@@ -30,12 +45,16 @@ h1 {
   margin-bottom: var(--h-top-margin); /* está certo*/
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-style: normal;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: var(--main-dark-color);
-  margin: var(--h-top-margin) 0 var(--h-button-margin);
+  /* margin: var(--h-top-margin) 0 var(--h-button-margin); */
 }
 
 h1 {
@@ -62,7 +81,12 @@ h6 {
   font-size: 0.67rem/1.2;
 }
 
-p, li, pre, cite, code, span {
+p,
+li,
+pre,
+cite,
+code,
+span {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
